@@ -48,38 +48,40 @@
       </div>
 
       <div class="form">
-        <form method="POST" class="js-form">
+        <form  class="js-form">
           <div class="group">
-            <input type="text" placeholder="First Name" name="firstname" id="">
-            <span class="error-field">
+            <input type="text" placeholder="First Name" name="firstname" class="" >
+            <span class="error-field hide">
               <em>
+                First name cannot be empty
               </em>
             </span>
           </div>
           <div class="group">
-            <input type="text" placeholder="Last Name" name="lastname" id="">
-            <span class="error-field">
+            <input type="text" placeholder="Last Name" name="lastname" class="">
+            <span class="error-field hide">
               <em>
+                Last Name cannot be empty
               </em>
             </span>
           </div>
           <div class="group">
-            <input type="email" placeholder="Email Address" name="email" id="">
-            <span class="error-field">
+            <input type="email" placeholder="Email Address" name="email" class="">
+            <span class="error-field hide">
               <em>
-
+                Looks like this is not an email
               </em>
             </span>
           </div>
           <div class="group">
-            <input type="password" placeholder="Password" name="password" id="">
-            <span class="error-field">
+            <input type="password" placeholder="Password" name="password" class="">
+            <span class="error-field hide">
               <em>
-
+                Password cannot be empty
               </em>
             </span>
           </div>
-          <button type="submit" class="js-submit-form">Claim your free trial</button>
+          <button type="submit" class="js-submit-form btn btn-2">Claim your free trial</button>
           <p class="form-footer">
             By clicking the button, you are agreeing to our <a href="#">Terms and Services</a>
           </p>

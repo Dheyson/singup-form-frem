@@ -63,6 +63,13 @@ body {
 		font-size: 13px;
 	}
 
+	.hide {
+		visibility: hidden;
+	}
+
+	.desktop-row .main .form .error-input {
+		border: 1px solid #c95d5d;
+	}
 
 }
 
@@ -205,5 +212,9 @@ body {
 	.group {
 		display: flex;
 		flex-direction: column;
+	}
+
+	.hide {
+		visibility: hidden;
 	}
 }
