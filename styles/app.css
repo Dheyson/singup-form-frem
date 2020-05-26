@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	height: 100vh;
+	background-color: var(--red-primary);
+	font-family: "Poppins", sans-serif;
+	background-image: url('../assets/images/bg-intro-desktop.png');
+}
+
+@media (min-width: 1440px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.container .desktop-row {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		margin: 80px;
+	}
+
+	.desktop-row .header {
+		text-align: start;
+		flex: 1;
+	}
+
+	.desktop-row .header h1 {
+		font-size: 4em;
+		line-height: 4.4rem;
+	}
+
+	.desktop-row .header p {
+		font-size: 1.2em;
+	}
+
+	.desktop-row .main {
+		flex: 1;
+	}
+
+	.desktop-row .main form {
+		margin: 30px;
+	}
+
+	.desktop-row .main .form input {
+		padding: 20px 20px 20px 30px;
+	}
+
+	input {
+		font-weight: 600;
+	}
+
+	.desktop-row .main .form  input:focus {
+		border: 1px solid var(--blue-accent);
+	}
+
+	.error-field {
+		font-size: 13px;
+	}
+
+
+}
+
+@media (min-width: 375px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.desktop-row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header {
+		color: #ffffff;
+		text-align: center;
+		margin: 30px;
+	}
+
+	.header h1 {
+		line-height: 2.4rem;
+		font-weight: 600;
+		font-size: 2em;
+	}
+
+	.header p {
+		line-height: 1.8rem;
+		font-weight: 500;
+		font-size: 1em;
+	}
+
+	.main .lead {
+		flex: 1;
+		background-color: var(--blue-accent);
+		padding: 5px;
+		margin: 20px;
+		border-radius: 13px;
+		box-shadow: 0px 10px 1px #0003;
+		text-align: center;
+	}
+
+	.main .lead .text {
+		color: #ffffff;
+		line-height: 1.8rem;
+		font-weight: 400;
+	}
+
+	.main .form {
+		background-color: #ffffff;
+		margin: 20px;
+		border-radius: 10px;
+		padding: 20px;
+		box-shadow: 0px 10px 1px #0003;
+	}
+
+	.main .form form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.main .form input {
+		padding: 20px;
+		border: 1px solid #0002;
+		border-radius: 5px;
+		margin-bottom: 15px;
+	}
+
+	.form input::placeholder {
+		color: var(--dark-blue);
+		font-weight: 600;
+		opacity: 0.7;
+	}
+
+	input {
+		font-weight: 600;
+	}
+
+	.desktop-row .main .form  input:focus {
+		border: 1px solid var(--blue-accent);
+	}
+
+	.main .form form > button {
+		padding: 20px;
+		background-color: var(--green-primary);
+		color: #fff;
+		box-shadow: 0px 5px 1px #0003;
+		border: 1px solid var(--green-primary);
+		font-size: 1rem;
+		text-transform: uppercase;
+		border-radius: 10px;
+		letter-spacing: 0.1rem;
+		cursor: pointer;
+	}
+
+	.main .form form > button:hover {
+		background-color: #40e49d;
+	}
+
+	.main .form form > p {
+		color: var(--grayish-blue);
+		text-align: center;
+		font-size: 0.8rem;
+		font-weight: 500;
+		padding-left: 20px;
+		padding-right: 20px;
+		line-height: 1.3rem;
+	}
+
+	.main .form form p > a {
+		color: var(--red-primary);
+	}
+
+	.main .form form p > a:hover {
+		color: #c95d5d;
+		font-weight: 700;
+	}
+
+	.footer {
+		font-size: 11px;
+		text-align: center;
+		color: #fff;
+	}
+
+	.footer a {
+		color: var(--dark-blue);
+		font-weight: 700;
+	}
+
+	.footer a:hover {
+		color: #6a667e;
+	}
+
+	.error-field {
+		font-size: 12px;
+		color: #f77373;
+		text-align: end;
+		/* padding-bottom: 20px; */
+	}
+	.group {
+		display: flex;
+		flex-direction: column;
+	}
+}

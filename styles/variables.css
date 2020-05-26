@@ -1,0 +1,10 @@
+:root {
+	--red-primary: hsl(0, 100%, 74%);
+	--green-primary: hsl(154, 59%, 51%);
+	--blue-accent: hsl(248, 32%, 49%);
+	--dark-blue: hsl(249, 10%, 26%);
+	--grayish-blue: hsl(246, 25%, 77%);
+	--font-size-default: 16px;
+	--mobile-pattern: 375px;
+	--desktop-pattern: 1440px;
+}
