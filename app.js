@@ -6,19 +6,16 @@ function manipulateValidationMsg(validationData) {
 	const { inputProps, action } = validationData;
 	const elementValidationMsg = inputProps.nextElementSibling;
 	const validationMsgClasses = elementValidationMsg.classList;
-	const inputClass = inputProps.classList;
 
 	const removeClass = () => {
 		validationMsgClasses.remove('hide');
-		inputClass.remove('error-input')
 	};
 
 	const addClass = () => {
 		validationMsgClasses.add('hide');
-		inputClass.add('error-input');
 	};
 
-	return action === 'hide' ? addClass() : removeClass();
+	return (action === 'hide') ? addClass() : removeClass();
 }
 
 // Validation rules for each field in our form.

@@ -7,7 +7,7 @@ body {
 	height: 100vh;
 	background-color: var(--red-primary);
 	font-family: "Poppins", sans-serif;
-	background-image: url('../assets/images/bg-intro-desktop.png');
+	background-image: url("../assets/images/bg-intro-desktop.png");
 }
 
 @media (min-width: 1440px) {
@@ -55,7 +55,7 @@ body {
 		font-weight: 600;
 	}
 
-	.desktop-row .main .form  input:focus {
+	.desktop-row .main .form input:focus {
 		border: 1px solid var(--blue-accent);
 	}
 
@@ -68,8 +68,9 @@ body {
 	}
 
 	.desktop-row .main .form .error-input {
-		border: 1px solid #c95d5d;
+		border: 2px solid #c95d5d;
 	}
+
 
 }
 
@@ -148,7 +149,7 @@ body {
 		font-weight: 600;
 	}
 
-	.desktop-row .main .form  input:focus {
+	.desktop-row .main .form input:focus {
 		border: 1px solid var(--blue-accent);
 	}
 
@@ -207,7 +208,7 @@ body {
 		font-size: 12px;
 		color: #f77373;
 		text-align: end;
-		/* padding-bottom: 20px; */
+		margin-bottom: 20px;
 	}
 	.group {
 		display: flex;
@@ -216,5 +217,12 @@ body {
 
 	.hide {
 		visibility: hidden;
+	}
+
+	.desktop-row .main .form div .img-error {
+		position: relative;
+		z-index: 2;
+		right: 50px;
+		top: 5px;
 	}
 }
