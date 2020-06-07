@@ -214,6 +214,12 @@ body {
 		display: flex;
 		flex-direction: column;
 	}
+	/* TODO Analisar estilos aqui */
+	.group::before {
+		position: absolute;
+		top: 0;
+		background-image: url('../assets/svg/icon-error.svg');
+	}
 
 	.hide {
 		visibility: hidden;
